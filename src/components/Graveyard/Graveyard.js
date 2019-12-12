@@ -1,3 +1,4 @@
+import './Graveyard.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
 import studentShape from '../../helpers/propz/studentShape';
@@ -9,8 +10,10 @@ class GraveYard extends React.Component {
   }
 
   render() {
-    const dedStudents = this.props.deadStudents;
-    const deadStudentCard = dedStudents.map((student) => <Gravestone key={student} student={student} />);
+    const killedStudents = this.props.deadStudents;
+
+    const deadStudentCard = killedStudents.map((student) => <Gravestone key={student.id} killed={student} />);
+
     return (
       <div className="d-flex justify-content-between">
         {deadStudentCard}

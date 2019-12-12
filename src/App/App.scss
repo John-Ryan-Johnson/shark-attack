@@ -2,6 +2,19 @@
   text-align: center;
 }
 
+.tank {
+  border: 2px solid black;
+  border-radius: 10%;
+  background-color: aqua;
+}
+
+.grave {
+  border: 2px solid black;
+  border-radius: 10%;
+  background-color: rgba(44, 23, 23, 0.856);
+  color: rgb(150, 146, 146);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

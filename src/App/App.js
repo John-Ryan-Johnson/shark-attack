@@ -9,16 +9,12 @@ import GraveYard from '../components/Graveyard/Graveyard';
 
 class App extends React.Component {
   state = {
-    students: [],
     liveStudents: [],
     deadStudents: [],
   }
 
 
   componentDidMount() {
-    const students = studentsData.getStudents();
-    this.setState({ students });
-
     const liveStudents = studentsData.livingStudents();
     this.setState({ liveStudents });
 
@@ -29,13 +25,14 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <div>
-          <div className="col-6">
-            <h1 className="text-center">Shark Tank</h1>
+        <h1>Shark Attack</h1>
+        <div className="row">
+          <div className="tank col-4 mx-auto mb-3">
+            <h2 className="text-center mb-1">Shark Tank</h2>
             <SharkTank liveStudents={this.state.liveStudents} />
           </div>
-          <div className="col-6">
-            <h1 className="text-center">Grave Yard</h1>
+          <div className="grave col-4 mx-auto mb-3">
+            <h2 className="text-center mb-1">Grave Yard</h2>
             <GraveYard deadStudents={this.state.deadStudents} />
           </div>
         </div>
