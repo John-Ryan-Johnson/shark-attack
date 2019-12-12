@@ -8,7 +8,7 @@ class Gravestone extends React.Component {
   }
 
   render() {
-    const eaten = this.props.killed;
+    const eaten = this.props;
 
     return (
       <div className="card col-6">

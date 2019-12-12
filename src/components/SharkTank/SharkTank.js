@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import './SharkTank.scss';
 import studentShape from '../../helpers/propz/studentShape';
 import LiveStudent from '../LiveStudent/LiveStudent';
 
@@ -20,8 +20,8 @@ class SharkTank extends React.Component {
     const livingStudents = this.props.liveStudents;
     const studentCard = livingStudents.map((student) => <LiveStudent key={student.id} student={student} />);
     return (
-      <div className="d-flex flex-wrap justify-content-between">
-        <button className="btn btn-danger" onClick={this.sharkAttackEvent}>Shark Attack</button>
+      <div className="sharkTank d-flex flex-wrap justify-content-between">
+        <button className="btn ml-5 rounded-circle" onClick={this.sharkAttackEvent}>Attack</button>
         {studentCard}
       </div>
     );
