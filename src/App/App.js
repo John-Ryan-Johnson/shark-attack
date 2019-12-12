@@ -9,16 +9,12 @@ import GraveYard from '../components/Graveyard/Graveyard';
 
 class App extends React.Component {
   state = {
-    students: [],
     liveStudents: [],
     deadStudents: [],
   }
 
 
   componentDidMount() {
-    const students = studentsData.getStudents();
-    this.setState({ students });
-
     const liveStudents = studentsData.livingStudents();
     this.setState({ liveStudents });
 

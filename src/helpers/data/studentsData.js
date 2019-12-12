@@ -139,7 +139,6 @@ const students = [
   },
 ];
 
-const getStudents = () => students;
 
 const livingStudents = () => {
   const liveStudents = students.filter((response) => response.isDead === false);
@@ -151,4 +150,4 @@ const dearlyBeloved = () => {
   return deadStudents;
 };
 
-export default { getStudents, livingStudents, dearlyBeloved };
+export default { livingStudents, dearlyBeloved };
