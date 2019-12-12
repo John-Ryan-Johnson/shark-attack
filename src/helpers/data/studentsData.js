@@ -138,3 +138,17 @@ const students = [
     isDead: false,
   },
 ];
+
+const getStudents = () => students;
+
+const livingStudents = (studentId) => {
+  const liveStudents = students.filter((response) => response.isDead === false);
+  return liveStudents;
+};
+
+const dearlyBeloved = (studentId) => {
+  const deadStudents = students.filter((response) => response.isDead === true);
+  return deadStudents;
+};
+
+export default { getStudents, livingStudents, dearlyBeloved };
