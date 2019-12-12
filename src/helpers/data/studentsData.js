@@ -141,12 +141,12 @@ const students = [
 
 const getStudents = () => students;
 
-const livingStudents = (studentId) => {
+const livingStudents = () => {
   const liveStudents = students.filter((response) => response.isDead === false);
   return liveStudents;
 };
 
-const dearlyBeloved = (studentId) => {
+const dearlyBeloved = () => {
   const deadStudents = students.filter((response) => response.isDead === true);
   return deadStudents;
 };
