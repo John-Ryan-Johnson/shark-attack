@@ -4,16 +4,17 @@ import studentShape from '../../helpers/propz/studentShape';
 
 class Gravestone extends React.Component {
   static propTypes = {
-    killed: studentShape.studentShape,
+    killedStudent: studentShape.studentShape,
   }
 
   render() {
-    const eaten = this.props;
+    const { killedStudent } = this.props;
 
     return (
       <div className="card col-6">
         <div className="card-body">
-          <h5 className="card-title">{eaten.firstName} {eaten.lastName}</h5>
+          <h5 className="card-title">{killedStudent.firstName}</h5>
+          <h5 className="card-title">{killedStudent.lastName}</h5>
         </div>
       </div>
     );

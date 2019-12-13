@@ -10,11 +10,8 @@ class LiveStudent extends React.Component {
   render() {
     const { student } = this.props;
     return (
-      <div className="pool card col-6 my-1">
-        <div className="card-body">
-          <h5 className="card-title">{student.firstName}</h5>
-          <h5 className="card-title">{student.lastName}</h5>
-        </div>
+      <div className="pool">
+        <img className="image rounded-circle" src={student.imgUrl} alt="student pic"></img>
       </div>
     );
   }
