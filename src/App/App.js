@@ -25,14 +25,15 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Shark Attack</h1>
+        <h1 className="title">SHARK ATTACK</h1>
+        <h2 className="tagLine text-white mb-5">Who's Next?</h2>
         <div className="row">
           <div className="tank col-4 mx-auto mb-3">
-            <h2 className="text-center mb-1">Shark Tank</h2>
+            <h1 className="tankName text-center mb-5 mt-4">Shark Tank</h1>
             <SharkTank liveStudents={this.state.liveStudents} />
           </div>
           <div className="grave col-4 mx-auto mb-3">
-            <h2 className="text-center mb-1">Grave Yard</h2>
+            <h1 className="graveName text-center text-white mb-5 mt-4">Grave Yard</h1>
             <GraveYard deadStudents={this.state.deadStudents} />
           </div>
         </div>

@@ -1,18 +1,59 @@
 .App {
   text-align: center;
+  background-image: url(https://images.pexels.com/photos/534590/pexels-photo-534590.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-repeat: no-repeat;
+}
+
+.title {
+  color: rgb(56, 248, 8);
+  font-size: 60px;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .tank {
-  border: 2px solid black;
-  border-radius: 10%;
-  background-color: aqua;
+  font-family: 'Girassol', cursive;
+  background-image: url(https://images.pexels.com/photos/261403/pexels-photo-261403.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-repeat: no-repeat;
+  border: 10px solid transparent;
+            padding: 10px;
+            border-image-source: url(https://images.pexels.com/photos/8892/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+            border-image-repeat: round;
+            border-image-slice: 30;
+            border-image-width: 25px;
+}
+
+.tankName {
+  font-size: 50px;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .grave {
-  border: 2px solid black;
-  border-radius: 10%;
-  background-color: rgba(44, 23, 23, 0.856);
-  color: rgb(150, 146, 146);
+  font-family: 'Girassol', cursive;
+  background-image: url(https://images.pexels.com/photos/1587548/pexels-photo-1587548.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-repeat: no-repeat;
+  border: 10px solid transparent;
+            padding: 10px;
+            border-image-source: url(https://images.pexels.com/photos/414765/pexels-photo-414765.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+            border-image-repeat: round;
+            border-image-slice: 30;
+            border-image-width: 25px;
+}
+
+.graveName {
+  font-size: 50px;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .App-logo {
