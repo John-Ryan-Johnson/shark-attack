@@ -4,14 +4,14 @@ import './LiveStudent.scss';
 
 class LiveStudent extends React.Component {
   static propTypes = {
-    liveStudents: studentShape.studentShape,
+    livingStudents: studentShape.studentShape,
   }
 
   render() {
-    const { student } = this.props;
+    const { liveStudent } = this.props;
     return (
       <div className="pool">
-        <img className="image rounded-circle" src={student.imgUrl} alt="student pic"></img>
+        <img className="image rounded-circle" src={liveStudent.imgUrl} alt="student pic"></img>
       </div>
     );
   }

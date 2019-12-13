@@ -9,17 +9,27 @@ import GraveYard from '../components/Graveyard/Graveyard';
 
 class App extends React.Component {
   state = {
-    liveStudents: [],
+    livingStudents: [],
     deadStudents: [],
   }
 
 
   componentDidMount() {
-    const liveStudents = studentsData.livingStudents();
-    this.setState({ liveStudents });
+    const livingStudents = studentsData.livingStudents();
+    this.setState({ livingStudents });
 
     const deadStudents = studentsData.dearlyBeloved();
     this.setState({ deadStudents });
+  }
+
+  sharkAttack = () => {
+    let livingStudents = studentsData.livingStudents();
+    const randStudent = livingStudents[Math.floor(Math.random() * livingStudents.length)];
+    const randStudentId = randStudent.id;
+    studentsData.followTheLight(randStudentId);
+    const deadStudents = studentsData.dearlyBeloved();
+    livingStudents = studentsData.livingStudents();
+    this.setState({ deadStudents, livingStudents });
   }
 
   render() {
@@ -30,7 +40,7 @@ class App extends React.Component {
         <div className="row">
           <div className="tank col-4 mx-auto mb-3">
             <h1 className="tankName text-center mb-5 mt-4">Shark Tank</h1>
-            <SharkTank liveStudents={this.state.liveStudents} />
+            <SharkTank livingStudents={this.state.livingStudents} sharkAttack={this.sharkAttack} />
           </div>
           <div className="grave col-4 mx-auto mb-3">
             <h1 className="graveName text-center text-white mb-5 mt-4">Grave Yard</h1>

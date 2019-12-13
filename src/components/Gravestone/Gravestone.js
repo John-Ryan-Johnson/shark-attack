@@ -1,21 +1,17 @@
-import './Gravestone.scss';
 import React from 'react';
 import studentShape from '../../helpers/propz/studentShape';
 
 class Gravestone extends React.Component {
   static propTypes = {
-    killedStudent: studentShape.studentShape,
+    deadStudents: studentShape.studentShape,
   }
 
   render() {
-    const { killedStudent } = this.props;
+    const { gravestone } = this.props;
 
     return (
-      <div className="card col-6">
-        <div className="card-body">
-          <h5 className="card-title">{killedStudent.firstName}</h5>
-          <h5 className="card-title">{killedStudent.lastName}</h5>
-        </div>
+      <div>
+        <img className="image rounded-circle" src={gravestone.imgUrl} alt="student pic"></img>
       </div>
     );
   }
