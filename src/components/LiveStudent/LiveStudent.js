@@ -10,7 +10,7 @@ class LiveStudent extends React.Component {
   render() {
     const { liveStudent } = this.props;
     return (
-      <div className="pool">
+      <div>
         <img className="image rounded-circle" src={liveStudent.imgUrl} alt="student pic"></img>
       </div>
     );
