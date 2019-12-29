@@ -12,6 +12,12 @@ Use this application to randomly select a person to be eaten by the shark. When 
 ![Main View](https://github.com/John-Ryan-Johnson/shark-attack/blob/master/Screenshots/Shark%20Attack.PNG)
 ![Main View](https://github.com/John-Ryan-Johnson/shark-attack/blob/master/Screenshots/Shark%20Attack1.PNG)
 
+# How to run
+* Clone down this project
+* Install http-server from npm
+* At the root of this project, run the following command: hs -p 8080
+* In your browser, navigate to https://localhost:8080
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
