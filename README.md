@@ -1,3 +1,16 @@
+# Shark Attack
+
+## Description
+Use this application to randomly select a person to be eaten by the shark. When you click the EAT button the person will be put in the graveyard.
+
+## Technologies Used
+1. HTML5, SCSS, Javascript
+2. Bootstrap & SASS
+3. React
+
+## Screenshots
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
