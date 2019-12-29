@@ -9,7 +9,8 @@ Use this application to randomly select a person to be eaten by the shark. When 
 3. React
 
 ## Screenshots
-
+https://github.com/John-Ryan-Johnson/shark-attack/blob/master/Screenshots/Shark%20Attack.PNG
+https://github.com/John-Ryan-Johnson/shark-attack/blob/master/Screenshots/Shark%20Attack1.PNG
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
