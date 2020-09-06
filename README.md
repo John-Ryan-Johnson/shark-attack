@@ -3,7 +3,7 @@
 https://shark-attack-40f1a.firebaseapp.com/
 
 ## Description
-Use this application to randomly select a person to be eaten by the shark. When you click the EAT button the person will be put in the graveyard.
+Use this application to randomly select a person to be eaten by the shark. When you click the EAT button a random person will be put in the graveyard.
 
 ## Technologies Used
 1. HTML5, SCSS, Javascript
